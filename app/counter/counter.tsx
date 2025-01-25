@@ -8,7 +8,7 @@ export const Counter = () => {
   const route = useRouter();
   const handleCounter = () =>{
     setCount(count + 1);
-    if(count > 10){
+    if(count > 9){
       window.alert('Unable service...');
       route.replace('/');
     }

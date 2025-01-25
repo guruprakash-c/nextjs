@@ -7,7 +7,15 @@ export const metadata:Metadata ={
     absolute: 'Blog'
  }
 };
-export default function BlogPage() {
+//const getRandom = (val:number) => Math.floor(Math.random() * val);
+export default async function BlogPage() {
+    await new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(0);
+        }, 2000);
+    });
+    // const rndm = getRandom(2);
+    // if(rndm === 1) throw new Error('Error in Loading');
     return (
       <div className={styles.main}>
         <h1>Blog Listing</h1>

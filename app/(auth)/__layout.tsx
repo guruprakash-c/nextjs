@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import './style.css';
 
 const NavLinks = [
@@ -22,8 +23,10 @@ const NavLinks = [
 
 export default function AuthLayout({children,}: Readonly<{children: React.ReactNode;}>) {
     const pathName = usePathname();
+    const [input, setInput] = useState("");
     return (
         <>
+        <input value={input} onChange={e=>setInput(e.target.value)} />
         <nav>
             {
                 NavLinks.map((link, index)=>{

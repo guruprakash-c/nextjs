@@ -12,7 +12,9 @@ return (<header style={{
         <Link href="/blog">Blog</Link>&nbsp;|&nbsp;
         <Link href="/articles">News</Link>&nbsp;|&nbsp;
         <Link href="/counter">Play Game</Link>&nbsp;|&nbsp;
-        <Link href="/docs">Docs</Link>&nbsp;
+        <Link href="/docs">Docs</Link>&nbsp;|&nbsp;
+        <Link href="/dashboard">Dashboard</Link>&nbsp;|&nbsp;&nbsp;
+        <Link href="/register">Register</Link>&nbsp;
     </nav>
   </header>)
 }

@@ -4,9 +4,11 @@ import { Inter_Tight, Zilla_Slab } from "next/font/google";
 import "./globals.css";
 import { Header } from "./_layouts/header";
 import { Footer } from "./_layouts/footer";
+import { ErrorWrapper } from "./error-wrapper";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
+  subsets: ["latin"]
 });
 
 const zillaSlab = Zilla_Slab({
@@ -28,7 +30,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="en">
       <body className={`${interTight.variable} ${zillaSlab.variable}`} style={{ margin: '0 auto', maxWidth: '900px'}}>
         <Header/>
-        <main style={{ padding: '2rem 0' }}>{children}</main>
+        <main style={{ padding: '2rem 0' }}>
+          <ErrorWrapper>{children}</ErrorWrapper>
+        </main>
         <Footer/>
       </body>
     </html>

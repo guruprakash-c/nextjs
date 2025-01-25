@@ -10,7 +10,9 @@ return (<header style={{
     <nav>
         <Link href="/about">About</Link>&nbsp;|&nbsp;
         <Link href="/blog">Blog</Link>&nbsp;|&nbsp;
-        <Link href="/articles">News</Link>&nbsp;
+        <Link href="/articles">News</Link>&nbsp;|&nbsp;
+        <Link href="/counter">Play Game</Link>&nbsp;|&nbsp;
+        <Link href="/docs">Docs</Link>&nbsp;
     </nav>
   </header>)
 }

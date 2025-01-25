@@ -1,0 +1,12 @@
+nav{
+    padding: 2px
+}
+nav a{
+    padding: 2px 4px;
+    color: #0078d4
+}
+.current{
+    padding: 2px 4px;
+    background: #0078d4;
+    color: #fff;
+}

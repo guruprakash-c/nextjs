@@ -13,7 +13,8 @@ const interTight = Inter_Tight({
 
 const zillaSlab = Zilla_Slab({
   variable: '--font-zilla-slab',
-  weight: '300'
+  weight: '300',
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {

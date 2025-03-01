@@ -1,18 +1,22 @@
+import React from "react";
+
 export default function Dashboard(
     {
         children,
         notifications,
         analytics,
         logs,
+        login
     }:
     {
         children:React.ReactNode,
         notifications:React.ReactNode,
         analytics:React.ReactNode,
-        logs:React.ReactNode
-
+        logs:React.ReactNode,
+        login: React.ReactNode
     }) {
-  return (
+  const isLoggedIn = false;
+  return isLoggedIn ? (
   <>
     <div>
         <div>{children}</div>
@@ -27,5 +31,8 @@ export default function Dashboard(
         </div>
     </div>
   </>
+  ) :
+  (
+    login
   );
 }
